@@ -12,7 +12,7 @@ export const triggerEvent = () => {
 /**
  * @param {node} target - Node that fire event
  */
-export const toggleDisplay = (target) => {
+const toggleDisplay = (target) => {
     let display = window.getComputedStyle(target).getPropertyValue('display')
     target.style.setProperty('display', display === 'none' ? 'grid' : 'none')
 }
